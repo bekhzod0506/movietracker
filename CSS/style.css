@@ -33,6 +33,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Roboto", "Arial", sans-serif;
+    background-color: #EBEAEA;
 }
 .container {
     width: 100%;
@@ -69,7 +70,7 @@ body {
 .navbar-main__info .navbar-input {
     width: 65%;
     padding: 1%;
-    height: 40px;
+    height: 50px;
     text-indent: 10px;
     font-size: 18px;
     border-radius: 24px;
@@ -100,9 +101,22 @@ body {
     position: relative;
     text-align: center;
     width: 90%;
+    border-radius: 18px;
+    box-shadow: 0px 5px 10px 2px rgba(41, 47, 54, 0.2);
+    padding: 0 0 10px 0;
+
+    z-index: 10;
+    transition: all ease-in-out 0.4s;
+}
+
+.movie:hover {
+    scale: 1.1;
 }
 .movie img {
+    height: 85%;
     width: 100%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
     object-fit: cover;
 }
 .movie .movie-score{
